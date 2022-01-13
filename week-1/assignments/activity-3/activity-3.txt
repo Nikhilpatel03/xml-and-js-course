@@ -1,0 +1,4 @@
+When I opened the activity 1 xml file in Excel, firstly it took the first tag i.e personalInfo
+as the heading and then all the tags are taken as column headings and content inside the 
+tag as its value(i.e row).
+

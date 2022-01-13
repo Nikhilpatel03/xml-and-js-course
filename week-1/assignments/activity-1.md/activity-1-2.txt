@@ -1,0 +1,21 @@
+We can enter the data of ten people in ten different <personalInfo> tag and then 
+put them inside one single tag. For example: 10 students of class IRA
+
+<?xml version="1.0" encoding="utf-8"?>
+<classIRA>
+    <personalInfo>
+    <name>Nikhil Patel</name>
+    <birthdate>18th Dec 1998</birthdate>
+    <qualification>IT Graduate</qualification>
+    <hobbies>
+            <hobby>Football</hobby1>
+            <hobby>Watching webseries and movies</hobby2> 
+            <hobby>Learning new Technologies</hobby3>
+    </hobbies>
+    </personalInfo>
+    .
+    .
+    .
+    .
+    .
+</classIRA>
