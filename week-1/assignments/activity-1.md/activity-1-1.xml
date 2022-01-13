@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<personalInfo>
+  <name>Nikhil Patel</name>
+  <birthdate>18th Dec 1998</birthdate>
+  <qualification>IT Graduate</qualification>
+  <hobbies>
+        <hobby>Football</hobby>
+        <hobby>Watching webseries and movies</hobby> 
+        <hobby>Learning new Technologies</hobby>
+  </hobbies>
+</personalInfo>
