@@ -1,0 +1,9 @@
+<businessCard>
+    <card id="1">
+        <name>Joe Marini</name>
+        <phone reference="home">+1 (415) 555-1234</phone> 
+        <phone reference="work">+1 (800) 555-9867 </phone> 
+        <phone reference="mobile">+1 (510) 555-1212</phone> 
+        <email>joe@joe.com</email>
+    </card>
+</businessCard>
