@@ -19,9 +19,9 @@ Ans: ![image](../Screenshots/comment.png)
 4. Identify prolog, document body, and epilog in the document. Are there any processing instructions?
 
 Ans: 
-prolog - "<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>"
+prolog - ![image](../Screenshots/prolog.png)
 
-document body - Everything starting from root element <menuInfo> till </menuInfo> is the document body
+document body - Everything starting from root element "menuInfo" till the end is the document body
 
 epilog - There is no epilog in the file.
 
@@ -29,23 +29,7 @@ epilog - There is no epilog in the file.
 5. Add inline DTD for this document.
 
 Ans:
-<!DOCTYPE menuInfo 
-[
-  <!ELEMENT menuInfo (title,summary,effectiveDate,menu,menu)>
-  <!ELEMENT title (#PCDATA)>
-  <!ELEMENT summary (#PCDATA)>
-  <!ELEMENT effectiveDate (#PCDATA)>
-  <!ELEMENT menu (category, menuItem, menuItem)>
-  <!ELEMENT category (#PCDATA)>
-  <!ELEMENT menuItem (itemName,description,price,indicator?,indicator?,indicator?)+>
-  <!ELEMENT itemName (originalName,oldName?)>
-  <!ELEMENT originalName (#PCDATA)> 
-  <!ELEMENT oldName (#PCDATA)> 
-  <!ELEMENT description (#PCDATA)> 
-  <!ELEMENT price (#PCDATA)> 
-  <!ELEMENT indicator (#PCDATA)> 
-
-]>
+![image](../Screenshots/DTD.png)
 
 6. Verify that file is well-formed and valid.
 
