@@ -1,0 +1,23 @@
+originalName{
+    font-size: x-large;
+}
+menu{
+    float: left;
+}
+menu:nth-child(n+1){
+    clear: left;
+}
+
+menuInfo{
+    background-color: cornsilk;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+category{
+    font-size: larger;
+    color: crimson;
+    font-style: italic;
+}
+title{
+    font-size: xx-large;
+    font-weight: bold;
+}
