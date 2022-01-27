@@ -12,4 +12,4 @@
     <!ELEMENT prices (price,price,price)>
     <!ELEMENT price (#PCDATA)>
     <!ELEMENT productItems (#PCDATA)>
-  ]>
+]>
