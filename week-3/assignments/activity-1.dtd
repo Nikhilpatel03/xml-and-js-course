@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE products 
-  
+ [
     <!ELEMENT products (product+)>
     <!ELEMENT product (productName, manufacturer, description?, prices, productItems)>
     <!ATTLIST product sku ID #REQUIRED>
@@ -13,4 +12,4 @@
     <!ELEMENT prices (price,price,price)>
     <!ELEMENT price (#PCDATA)>
     <!ELEMENT productItems (#PCDATA)>
-  >
+  ]>
