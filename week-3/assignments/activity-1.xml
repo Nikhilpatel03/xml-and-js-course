@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-  <products 
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:noNamespaceSchemaLocation="assignments/activity-3.xsd">
+  <!DOCTYPE products SYSTEM "activity-1.dtd">
+  <products>
     <product sku="BOS12DDF2" createdAt="2020-12-23T09:23:44" shippable="true">
       <productName>Dog Shirt Gift Basket</productName>
       <manufacturer id="sjb-pet">SJB Pet Boutique</manufacturer>
@@ -45,3 +44,5 @@
       <productItems>3230, 3232, 3250</productItems>
     </product>
   </products>
+
+  <!-- find the screenshot of validation in activity-1.md -->
