@@ -16,5 +16,7 @@ Inside each catalog_item, item number, price, gender and size columns are render
 
 ![image](for-each-3-4.png)
 
+Output:
+![image](output.png)
 
 
