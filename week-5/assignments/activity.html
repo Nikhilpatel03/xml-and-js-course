@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <title>Test Input</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script language="JavaScript">
+      function testResults(event) {
+        event.preventDefault();
+        const form = event.target;
+
+        const inputControl = form.inputbox;
+        const radioControl = form.answer;
+
+        const inputValue = inputControl.value;
+        const radioValue = radioControl.value;
+
+        const checkedValues = $('input[type=checkbox]:checked').map(function(){
+        return this.value;
+        }).get().join(",");
+
+        console.log(`Selected value: ${inputValue}`);
+        console.log(`Selected value: ${radioValue}`);
+        console.log(checkedValues);
+        
+        inputControl.value = "";
+        const radio = form.answer;
+        for(var i=0;i<radio.length;i++)
+            radio[i].checked = false;
+
+        const cb = form.language;
+        for(var i=0;i<cb.length;i++)
+            cb[i].checked = false;
+       
+      }
+    </script>
+  </head>
+  <body>
+    <form onSubmit="return testResults(event)" action="" method="get">
+      Enter Full Name in the box: <br/>
+      <input type="text" name="inputbox" value="" required />
+      <fieldset>      
+        <legend>Are you a Employed?</legend> 
+            <input type="radio" id="value1" name="answer" value="Yes">
+            <label for="value1">Yes</label><br>
+            <input type="radio" id="value2" name="answer" value="No">
+            <label for="value2">No</label><br>
+      </fieldset>   
+      <fieldset>      
+        <legend>Which Programming Languages you know?</legend> 
+            <input type="checkbox" id="language1" name="language" value="Java">
+            <label for="language1"> Java Programming</label><br>
+            <input type="checkbox" id="language2" name="language" value="Python">
+            <label for="language2"> Python Programming</label><br>
+            <input type="checkbox" id="language3" name="language" value="C">
+            <label for="language3"> C Programming</label><br>
+      </fieldset>  
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

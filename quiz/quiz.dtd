@@ -1,0 +1,10 @@
+<!ELEMENT products (product+)>
+<!ELEMENT product (productName,availableSizes,prices)+>
+<!ATTLIST product id ID #REQUIRED>
+<!ELEMENT productName (#PCDATA)>
+<!ELEMENT availableSizes (size+)>
+<!ELEMENT size (#PCDATA)>
+<!ATTLIST size description CDATA #REQUIRED>
+<!ELEMENT prices (price+)>
+<!ELEMENT price (#PCDATA)>
+<!ATTLIST price currency CDATA #REQUIRED>

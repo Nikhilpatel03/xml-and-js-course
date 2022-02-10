@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="products">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="1" maxOccurs="unbounded" ref="product"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="product">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="productName"/>
+				<xs:element ref="availableSizes"/>
+				<xs:element ref="prices"/>
+			</xs:sequence>
+			<xs:attribute name="id" type="xs:ID" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="productName" type="xs:string"/>
+	<xs:element name="availableSizes">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="1" maxOccurs="unbounded" ref="size"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="size">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="description" type="xs:string" use="required"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="prices">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="1" maxOccurs="unbounded" ref="price"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="price">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="currency" type="xs:string" use="required"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
