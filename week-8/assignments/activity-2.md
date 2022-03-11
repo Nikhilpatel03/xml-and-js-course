@@ -2,4 +2,4 @@
 
 - Convert `products.xml` into json format
 
-Ans: refer products.json file
+Ans: refer activity2.json file

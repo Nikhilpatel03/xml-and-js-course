@@ -2,4 +2,4 @@
 
 Convert `customers.xml` into json format
 
-Ans: refer customers.json file
+Ans: refer activity1.json file
