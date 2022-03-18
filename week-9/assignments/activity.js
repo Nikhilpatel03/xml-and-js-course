@@ -63,7 +63,7 @@ const onSubmit = (event) => {
 };
 
 
-//onReset fucntion 
+//onReset function 
 const onReset = () => {
     loadData(`./data.json`).then((data) => renderTable(data));
 };
