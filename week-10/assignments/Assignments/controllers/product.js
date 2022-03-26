@@ -1,24 +1,28 @@
-const people = require('../data.json');
+const students = require('../data.json');
 
 
-const getAllData = async ({ id, email, first_name, last_name }) => {
+const getAllData = async ({ rollno, firstname, lastname, nickname, marks }) => {
     try {
-        let result = Array.from(people);
+        let result = Array.from(students);
 
-        if (id) {
-            result = result.filter((item) => item.id === Number(id));
+        if (rollno) {
+            result = result.filter((item) => item.rollno === rollno);
         }
 
-        if (email) {
-            result = result.filter((item) => item.email === email);
+        if (firstname) {
+            result = result.filter((item) => item.firstname === firstname);
         }
 
-        if (first_name) {
-            result = result.filter((item) => item.first_name === first_name);
+        if (lastname) {
+            result = result.filter((item) => item.lastname === lastname);
+        }
+
+        if (nickname) {
+            result = result.filter((item) => item.nickname === nickname);
         }
         
-        if (last_name) {
-            result = result.filter((item) => item.last_name === last_name);
+        if (marks) {
+            result = result.filter((item) => item.marks === marks);
         }
 
         return { code: 200, data: JSON.stringify(result) };
@@ -28,20 +32,20 @@ const getAllData = async ({ id, email, first_name, last_name }) => {
 }
 
 
-const getPersonById = async (personId) => {
-    const user = people.find(({ id }) => id === Number(personId));
-
-    if (user) {
-        return { code: 200, data: JSON.stringify(user) }
+const getStudentById = async (studentRollNo) => {
+    
+    const student = students.find(({ rollno }) => rollno === Number(studentRollNo));
+    if (student) {
+        return { code: 200, data: JSON.stringify(student) }
     } else {
         return {
             code: 404,
-            data: JSON.stringify({ message: `No person found for id ${userId}` }),
+            data: JSON.stringify({ message: `No student found for roll no ${studentRollNo}` }),
         }
     }
 }
 
 module.exports = {
     getAllData,
-    getPersonById,
+    getStudentById,
 };
