@@ -34,7 +34,6 @@ const getAppById = (appId) =>
     }
   });
 
-
 module.exports = {
     getAllData,
     getAppById
