@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <title>Test Input</title>
+  </head>
+  <body>
+    <body>
+      <div class="container">
+        <div>
+          <form id="search-form-id">
+            <input
+              type="text"
+              name="id"
+              id="id"
+              placeholder="Application Bundle ID"
+            />
+  
+            <button type="submit">Filter by ApplicationBundleID</button>
+            <button type="reset">Reset</button>
+          </form>
+        </div>
+        <div>
+          <form id="search-form">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Application Name"
+            />
+            <input
+              type="text"
+              name="version"
+              id="version"
+              placeholder="Application Version"
+            />
+            <input
+            type="text"
+            name="country"
+            id="country"
+            placeholder="Application Country"
+          />
+            <button type="submit">Apply filters</button>
+            <button type="reset">Reset</button>
+          </form>
+        </div>
+       
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Application Bundle ID</th>
+          <th>Application Name</th>
+          <th>Application Version</th>
+          <th>Application Country</th>
+        </tr>
+      </thead>
+      <tbody id="table-body"></tbody>
+    </table>
+    <script type="text/javascript" src="./bundle.js"></script>
+  </body>
+</html>
