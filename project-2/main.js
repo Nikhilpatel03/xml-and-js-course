@@ -49,7 +49,7 @@ renderTable([data]);
 };
 
 const appIdForm = document.getElementById("search-form-id");
+appIdForm.onSubmit = onSubmitApplicationById;
+appIdForm.onReset = onSubmitApplicationById;
 
-appIdForm.addEventListener("submit", onSubmitApplicationById);
-appIdForm.addEventListener("reset", onReset);
 

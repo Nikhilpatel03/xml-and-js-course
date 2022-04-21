@@ -23,7 +23,7 @@ new Promise((resolve) => {
 
 const getAppById = (appId) => 
  new Promise((resolve) => {
-    const app = apps.find(({ App_Bundle_ID }) => App_Bundle_ID === (appId));
+    const app = apps.find(({ App_Bundle_ID }) => App_Bundle_ID === appId);
     if (app) {
         resolve({ code: 200, data: app }); 
     } else {

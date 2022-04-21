@@ -10,5 +10,9 @@
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "browserify": "^17.0.0",
+    "uniq": "^1.0.1"
   }
 }
